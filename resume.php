@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php require 'meta.html';
-    $pageID = 4;
+    <?php 
+      require 'meta.html';
+      $pageID = 4;
     ?>
     <meta name="description" content="">
     <title>Résumé - Grey Patterson</title>
@@ -11,7 +11,6 @@
 
   <body>
     <?php include 'navbar.php' ;?>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h1>Grey Patterson</h1>
@@ -22,7 +21,6 @@
     </div>
 
     <div class="container">
-      <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-6">
           <h2><span class="glyphicon glyphicon-list-alt"></span> Experience</h2>

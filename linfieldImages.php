@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php require 'meta.html';
-    $pageID = 5;
+    <?php 
+      require 'meta.html';
+      $pageID = 5;
     ?>
     <meta name="description" content="">
     <title>Linfield Images - Grey Patterson</title>
@@ -11,7 +12,6 @@
 
   <body>
     <?php include 'navbar.php' ;?>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
         <h1>Linfield Images</h1>

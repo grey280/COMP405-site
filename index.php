@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php require 'meta.html';
-    $pageID = 1;
+    <?php 
+      require 'meta.html';
+      $pageID = 1;
     ?>
     <meta name="description" content="">
     <title>Grey Patterson</title>
@@ -11,7 +12,6 @@
 
   <body>
     <?php include 'navbar.php' ;?>
-
     <header>
       <div class="header-content">
           <div class="header-content-inner">

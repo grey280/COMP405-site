@@ -2,8 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <?php require 'meta.html';
-    $pageID = 2;
+    <?php 
+      require 'meta.html';
+      $pageID = 2;
     ?>
     <meta name="description" content="">
     <title>Academic Work - Grey Patterson</title>
