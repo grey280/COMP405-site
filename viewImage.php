@@ -47,7 +47,7 @@
     <?php include 'navbar.php' ;?>
     <div class="jumbotron">
       <div class="container">
-        <img class="img-responsive center-block" src="images/assgn1/<?php echo $newVar; ?>big.png">
+        <img class="img-responsive center-block" src="images/assgn1/<?php echo $newVar; ?>big.png" style="margin-top:20px">
         <h1><?php echo $imageName; ?></h1>
         <p><?php echo $imageDescription; ?></p>
         <a class="btn btn-primary" href="linfieldImages.php">&laquo; Back to images list</a>
