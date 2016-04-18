@@ -87,38 +87,38 @@
         <div class="col-md-3">
           <h2>Fall Semester</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="">MUSC222: ETSS III</td></tr>
-            <tr><td class="">MUSC221: Music Theory III</td></tr>
-            <tr><td class="">MUSC117: Concert Choir</td></tr>
-            <tr><td class="">MUSC203*10: Applied Voice: Major</td></tr>
-            <tr><td class="">MUSC203*3: Applied Composition: Major</td></tr>
             <tr><td class="">COMP262: Data Abstraction</td></tr>
             <tr><td class="">MATH230: Discrete Mathematics</td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/fall/MUSC108.pdf">MUSC108: Men's Glee</td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/fall/MUSC117.pdf">MUSC117: Concert Choir</a></td></tr>
+            <tr><td class="">MUSC203*3: Applied Composition: Major</td></tr>
+            <tr><td class="">MUSC203*10: Applied Voice: Major</td></tr>
+            <tr><td class="">MUSC221: Music Theory III</td></tr>
+            <tr><td class="">MUSC222: ETSS III</td></tr>
             <tr><td class="">MUSC253: Music Cultures of the World</td></tr>
-            <tr><td class="">MUSC108: Men's Glee</td></tr>
           </table>
         </div>
         <div class="col-md-3">
           <h2>January Term</h2>
           <table class="table table-bordered table-striped">
             <tr><td class="">COMP330: Operating Systems/Networking</td></tr>
-            <tr><td class="">ENGL304: Environmental Literature</td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/january/ENGL304.pdf">ENGL304: Environmental Literature</a></td></tr>
           </table>
         </div>
         <div class="col-md-3">
           <h2>Spring Semester</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="">MUSC223: Music Theory IV</td></tr>
-            <tr><td class="">MUSC224: ETSS IV</td></tr>
-            <tr><td class="">MUSC225: Music Technology</td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/spring/COMP377.pdf">COMP377: Computer Architecture</a></td></tr>
+            <tr><td class="warning"><!-- TODO: Build a 'coursework' page for this --><a download href="./classes/sophomore/spring/COMP405.pdf">COMP405: Platform-Based Software Development</a></td></tr>
             <tr><td class="">HHPA067: Scuba</td></tr>
-            <tr><td class="">COMP377: Computer Architecture</td></tr>
-            <tr><td class="">COMP405: Platform-Based Software Development</td></tr>
-            <tr><td class="">MUSC117: Concert Choir</td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/spring/MUSC108.pdf">MUSC108: Men's Glee</a></td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/spring/MUSC117.pdf">MUSC117: Concert Choir</td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/spring/MUSC141.pdf">MUSC141: Keyboard for the Professional Musician: Intermediate</a></td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/spring/MUSC203-3.pdf">MUSC203*3: Applied Composition: Major</a></td></tr>
             <tr><td class="">MUSC203*10: Applied Voice: Major</td></tr>
-            <tr><td class="">MUSC108: Men's Glee</td></tr>
-            <tr><td class="">MUSC203*3: Applied Composition: Major</td></tr>
-            <tr><td class="">MUSC141: Keyboard for the Professional Musician: Intermediate</td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/spring/MUSC223.pdf">MUSC223: Music Theory IV</a></td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/spring/MUSC224.pdf">MUSC224: ETSS IV</a></td></tr>
+            <tr><td class="warning"><a download href="./classes/sophomore/spring/MUSC225.pdf">MUSC225: Music Technology</a></td></tr>
           </table>
         </div>
       </div>
@@ -136,13 +136,13 @@
         <div class="col-md-3">
           <h2>Fall Semester</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="">MLGR103: Survival German/Vienna</td></tr>
-            <tr><td class="">MLGR101: Elementary German 1</td></tr>
             <tr><td class="">HIST365: Ethnic Diversity/Eastern Europe</td></tr>
-            <tr><td class="">MLGR373: Politics of European Integration</td></tr>
-            <tr><td class="">MLGR365: Austrian Pol/Sci in Europe</td></tr>
-            <tr><td class="">SOAN040: Community Service</td></tr>
             <tr><td class="">IDST031: Intercultural Communication: Departure/Reentry</td></tr>
+            <tr><td class="">MLGR101: Elementary German 1</td></tr>
+            <tr><td class="">MLGR103: Survival German/Vienna</td></tr>
+            <tr><td class="">MLGR365: Austrian Pol/Sci in Europe</td></tr>
+            <tr><td class="">MLGR373: Politics of European Integration</td></tr>
+            <tr><td class="">SOAN040: Community Service</td></tr>
           </table>
         </div>
         <div class="col-md-3">
