@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+	<!-- I see you're reading my code! Licensing stuff:
+		jQuery
+			jQuery is an awesome little library used for simplifying the writing of JavaScript. The implementation here is hosted off of Google's CDN, but jQuery itself is available at jQuery.com
+		Quicksand, Open Sans, Raleway
+			These three fonts are all in some variant of the open domain or open source, and are hosted by Google Fonts, a wonderful little tool.
+		HTML5 Shiv
+			Makes HTML5 work in those pesky older browsers. Hosted by Google Code. https://code.google.com/p/html5shiv/
+		Konami.js
+			Surprise- there's a Konami Code embedded in this website! jQuery plugin to make that easy provided by https://github.com/tommcfarlin/konami-code
+		jQuery Waypoints
+			Handy little jQuery plugin that was used for the development of the highlights in the navigation bar. http://imakewebthings.com/jquery-waypoints/
+		Tango Desktop Theme
+			My favorite color scheme, although it only shows up in the navigation bar. http://tango.freedesktop.org/
+		And hey, since you're looking at this code and I'm looking for programming internships or jobs, be sure to check out the resume and drop me an email! -->
+	<title>Grey Patterson</title>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400|Open+Sans:400italic,600italic,600,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<link rel='stylesheet' href='styles/main.css' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/jquery.konami.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script type="text/javascript">
+	function frameLoaded(){
+		iFrameID = document.getElementById('resumeFrame');
+		iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+	}
+	window.addEventListener('resize',function(){frameLoaded();});
+	$(document).ready(function(){
+	var foo = $('nav').outerHeight(true);
+		$('#heightSpoof').waypoint(function(direction){
+			if(direction=='down'){
+				$('nav').addClass('sticky');
+			}else{
+				$('nav').removeClass('sticky');
+			}
+		}, {offset:foo});
+		$('#heightSpoof').waypoint(function(direction){
+			if(direction=='down'){
+				$('#backImg').addClass('sticky');
+			}else{
+				$('#backImg').removeClass('sticky');
+			}
+		});
+		$('.sectionHead').waypoint(function(direction){
+			var foo = '';
+			var thisOne = $(this).data('nav');
+			$('a.current').removeClass('current');
+			var hash;
+			if(direction=='down'){
+				$(thisOne).addClass('current');
+				hash = $(thisOne).parent().children().first().attr('href');
+				history.replaceState(foo,"Grey Patterson - "+$(thisOne).text(),hash);
+			}else if(thisOne=='#goAboutMe' && direction=='up'){
+				history.replaceState(foo,document.title,'#home');
+			}else{
+				$(thisOne).parent().prev().children().first().addClass('current');
+				hash = $(thisOne).parent().prev().children().first().attr('href');
+				history.replaceState(foo,"Grey Patterson - "+$(thisOne).text(),hash);
+			}
+			/*console.group("Scroll Event");
+			console.log("Foo: " + foo);
+			console.log("ThisOne Text: " + $(thisOne).text());
+			console.log("Hash: " + hash);
+			console.groupEnd();*/
+		},{
+			offset:75
+		});
+		$('#resumeFrame').waypoint(function(direction){
+			if(direction=='down'){
+				$('#resumeFrame').css('background-color','white');
+			}else{
+				$('#resumeFrame').css('background-color','');
+			}
+		},{offset:window.innerHeight - window.innerHeight*.25});
+		console.log(window.innerHeight-window.innerHeight*.25);
+		var konamid = false;
+		$(window).konami({code:[38,38,40,40, 37, 39, 37, 39, 66, 65], cheat:function(){ // up up down down left right left right b a
+			console.log('Konami!');
+			if(!konamid){
+				console.log('Skull man!');
+				$('#backImg img').prop('src','images/skull-man.jpg');
+				$('#konamiName').text("Skull Man");
+				konamid = true;
+			}else{
+				console.log('Path!');
+				$('#backImg img').prop('src','images/path.jpg');
+				$('#konamiName').text("Path");
+				konamid = false;
+			}
+		}});
+	});
+</script>
+</head>
+<body>
+<div id="heightSpoof"></div>
+<div id="headImg"><img src="images/beach.jpg"></div>
+<nav>
+<ul>
+	<li><a id="goAboutMe" href="#about">About Me</a></li>
+	<li><a id="goAcademics" href="#academics">Academics</a></li>
+	<li><a id="goPortfolio" href="#portfolio">Portfolio</a></li>
+	<li><a id="goResume" href="#resume">Resume</a></li>
+</nav>
+<div id="backImg"><img src="images/path.jpg"></div>
+<a class="anchor" id="about"></a>
+<section id="aboutSec" class="alpha">
+	<header>
+		<h1 id="aboutMeTitle" class="sectionHead" data-nav="#goAboutMe">Grey Patterson</h1>
+	</header>
+	<section class="beta">
+		<h1>About Me</h1>
+		<p>My name is Grey Patterson, and I am a freshman at Linfield College. I am pursuing a double-major in computer science and music, and I hope to have a career in the field of &ldquo;making stuff.&rdquo;</p>
+		<p>I enjoy photography, and took the two photos visible in this page, titled "Beach" and "<span id="konamiName">Path</span>," respectively. Some of my other photos have been linked to from this page, and the rest are available on my personal website and blog, a link to which is available below.</p>
+		<p>I also, as demonstrated by this entirely hand-coded site, enjoy working with both the technical and the graphic aspects of design, and hope to be able to incorporate those elements into my career.</p>
+		<p>Following my graduation from Linfield College, I plan to start a career in the computer science industry, although I have yet to choose a specific focus for that venture.</p>
+	</section>
+	<section class="beta">
+		<h1>Links</h1>
+		<ul>
+			<li><a href="http://grey280.net">Personal Website &amp; Blog</a></li>
+			<li><a href="http://youtube.com/GreyTwoEighty">YouTube</a></li>
+		</ul>
+	</section>
+</section>
+<a class="anchor" id="academics"></a>
+<section id="academicsSec" class="alpha">
+	<header><h1 id="academicsTitle" class="sectionHead" data-nav="#goAcademics">Academics</h1></header>
+	<section class="beta">
+		<p>Where available, click on a class name to view a PDF of the syllabus. Please note, these syllabi are usually the result of my scanning handouts, and may not be of the highest quality, for which I apologize.</p>
+	</section>
+	<section class="beta">
+		<h1>Freshman Year</h1>
+		<section class="gamma">
+			<h1>Fall Semester</h1>
+			<ul>
+				<li>Colloquium</li>
+				<li><a download href="attachments/MUSC121.pdf">Music Theory I</a></li>
+				<li><a download href="attachments/MUSC122.pdf">Ear Training &amp; Sight Singing I</a></li>
+			</ul>
+			<ul>
+				<li>Concert Choir</li>
+				<li>Voice Lessons for Music Majors</li>
+				<li><a download href="attachments/MATH170.pdf">Calculus I</a></li>
+			</ul>
+			<ul>
+				<li><a download href="attachments/COMP160.pdf">Introduction to Programming</a></li>
+				<li><a download href="attachments/COMP121.pdf">Introduction to Internet and the World Wide Web</a></li>
+			</ul>
+		</section>
+		<section class="gamma">
+			<h1>January Term</h1>
+			<ul>
+				<li>Introduction to Proofs</li>
+			</ul>
+		</section>
+		<section class="gamma">
+			<h1>Spring Semester</h1>
+			<ul>
+				<li>Music Theory II</li>
+				<li>Ear Training &amp; Sight Singing II</li>
+				<li><a download href="attachments/MUSC135.pdf">Understanding Jazz</a></li>
+			</ul>
+			<ul>
+				<li>Concert Choir</li>
+				<li>Voice Lessons for Music Majors</li>
+				<li><a download href="attachments/MUSC233.pdf">Music History and Literature: Introduction</a></li>
+			</ul>
+			<ul>
+				<li>Programming: Objects</li>
+				<li><a download href="attachments/INQS121.pdf">Inquiry: From the Beats to the Beatles</a></li>
+			</ul>
+		</section>
+	</section>
+</section>
+<a class="anchor" id="portfolio"></a>
+<section id="portfolioSec" class="alpha">
+		<header>
+			<h1 id="portfolioTitle" class="sectionHead" data-nav="#goPortfolio">Portfolio</h1>
+		</header>
+		<section class="beta">
+			<h1>Assignments</h1>
+			<section class="gamma">
+				<h1>Textbook Exercises</h1>
+				<p>This assignment consisted of two variants on a template listed within the textbook.</p>
+				<ul>
+					<li><a href="assignments/assignment1_1/index.html">Assignment 1-1</a></li>
+					<li><a href="assignments/assignment1_2/index.html">Assignment 1-2</a></li>
+				</ul>
+			</section>
+			<section class="gamma featured">
+				<h1>Resume</h1>
+				<p>The assignment called for the creation, with HTML and CSS, of a professional resume.</p>
+				<ul><li><a href="#resume">Assignment 2-1</a></li></ul>
+			</section>
+			<section class="gamma">
+				<h1>Linfield Information</h1>
+				<p>The second component of Assignment 2 was to design a short information page for an organization of the student's choosing.</p>
+				<ul><li><a href="assignments/assignment2_2/index.html">Assignment 2-2</a></li></ul>
+			</section>
+			<section class="gamma">
+				<h1>Diversity at Linfield</h1>
+				<p>The applied portion of a midterm, creating a basic webpage for a department at Linfield.</p>
+				<ul><li><a href="projects/midterm.html">Midterm</a></li></ul>
+			</section>
+		</section>
+		<section class="beta">
+			<h1>Projects</h1>
+			<section class="gamma featured">
+				<h1>Oregon in Pictures</h1>
+				<p>The first project was centered around the use of pictures, and the elegant display of a series of thumbnail images that linked to the larger forms of the pictures.</p>
+				<p>For this project, all photographs used were ones that I had taken myself.</p>
+				<ul><li><a href="projects/project1_1/index.html">Project 1-1</a></li></ul>
+			</section>
+			<section class="gamma">
+				<h1>Music</h1>
+				<p>The second component of the first project also called for the use of pictures, this time working with differing image alignments.</p>
+				<p>Notably, in this project, the images are placed using CSS only, and have a parallaxing effect applied to them. Proper positioning was achieved by creative use of tables.</p>
+				<ul><li><a href="projects/project1_2/index.html">Project 1-2</a></li></ul>
+			</section>
+			<section class="gamma featured">
+				<h1>Linfield Music Department</h1>
+				<p>The first portion of the final project called for the creation of an alternate website for whichever department of Linfield the student felt like working with.</p>
+				<p>In this case, I once again chose music. However, instead of focusing purely on music, I instead set out to create an alternate design for the college's website as a whole, and the end result is a template that could be adopted with fairly little effort by any department within Linfield.</p>
+				<ul><li><a href="projects/project2_1/index.html">Project 2-1</a></li></ul>
+			</section>
+			<section class="gamma">
+				<h1>Portfolio</h1>
+				<p>Currently on display, the final project called for the creation of a personal portfolio to organize all the work done through the class, as well as a modicum of personal information.</p>
+				<ul><li><a href="index.html">Project 2-2</a></li></ul>
+			</section>
+		</section>
+	</section>
+</section>
+<a class="anchor" id="resume"></a>
+<section id="resumeSec" class="alpha">
+	<header><h1 class="sectionHead" id="resumeHead" data-nav="#goResume">Resume</h1></header>
+	<section class="beta" style="height:75%;"><iframe src="resume/index.html" id='resumeFrame' onload="frameLoaded();"></iframe>
+	<!--<ul>
+		<li><a href="./resume/">To view this resume in full-screen, click here.</a></li>
+	</ul>-->
+	</section>
+</section>
+<footer>
+	<p>All photographs and materials here are &copy;2014 <a href="http://grey280.net/">Grey Patterson</a>, unless explicitly stated otherwise.
+	</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* So the HTML5 structural tags work in older browsers */
+	article, aside, figure, footer, header, nav, section {
+	    display: block;
+	}
+/* General */
+	body{
+		font-family: Open Sans, sans-serif;
+		
+	}
+/* Header */
+	header h1{
+		color:#2e3436;
+		font-size:64px;
+		margin-top:15px;
+		font-family: Quicksand, sans-serif;
+		font-weight:300;
+		
+	}
+	header{
+		
+	}
+
+/* Sections */
+	h1{
+		font-family:Quicksand;
+		text-align:center;
+	}
+	table#main{
+		width:100%;
+		height:450px;
+		table-layout:fixed;
+		text-align:center;
+	}
+	table#main tbody tr{
+		height:150px;
+	}
+	table#main tbody tr td{
+		height:150px;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+	}
+	table#main tbody tr td img{
+		width:100%;
+		display:block;
+	}
+	table#main tbody tr td#piano{
+		background:url(../images/piano.jpg) no-repeat center center fixed;
+		background-position:50% 50%;
+		background-size:100% auto;
+	}
+	table#main tbody tr td#violin{
+		background-color:black;
+		background:url(../images/violin.jpg) no-repeat center center fixed;
+		/*background-position:center 25%;
+		background-size:70% auto;*/
+	}
+	table#main tbody tr td#sheet-music{
+		background:url(../images/sheet-music.jpg) no-repeat center center fixed;
+		background-size:100% auto;
+	}
+	.imageCredit{
+		font-size:.5em;
+		display:block;
+	}
+	table#links{
+		width:100%;
+		table-layout:fixed;
+		text-align:right;
+	}
+	table#links tr td{
+		width:33%;
+	}
+	table#links tr td:nth-child(2){
+		text-align:center;
+	}
+	table#links tr td:last-child{
+		text-align:left;
+	}
+/* Footer */
+	footer{
+		position:relative;
+		bottom:0px;
+		left:0px;
+		width:100%;
+		text-align:center;
+		font-size:.6em;
+		clear:left;
+	}

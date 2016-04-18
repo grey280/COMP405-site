@@ -1,0 +1,176 @@
+/* So the HTML5 structural tags work in older browsers */
+	article, aside, figure, footer, header, nav, section {
+	    display: block;
+	}
+/* General */
+	body{
+		font-family: Open Sans, sans-serif;
+		padding:0;
+		margin:0;
+		/*background:url(../images/beach.jpg) no-repeat center center fixed;
+		background-size:cover;*/
+	}
+/* Nav */
+	nav{
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+		z-index:10000;
+		height:32px;
+	}
+	nav.sticky{
+		position:fixed;
+		top:0;
+	}
+	#backImg.sticky{
+		position:fixed;
+		height:100%;
+		top:0;
+	}
+	nav ul{
+		margin:0;
+	}
+	nav a{
+		color:white;
+		display:inline-block;
+		width:100%;
+		height:100%;
+		background-color:rgba(46,52,54,0.9);
+		padding:5px 0px;
+		text-decoration:none;
+	}
+	nav a.current{
+		background-color:rgba(138,226,52,0.9);
+	}
+	nav a:hover{
+		background-color:rgba(114,159,207,0.9);
+	}
+	a.anchor{
+		display:block;
+		position:relative;
+		visibility:hidden;
+		top:-20px;
+	}
+	a.anchor:first-of-type{
+		top:-35px;
+		margin-top:102%; /* I honestly don't know what this margin is pushing off of. Oh well. */
+	}
+	#heightSpoof{
+		position:absolute;
+		top:100%;
+		left:0;
+		width:0;
+		height:100%;
+	}
+/* Header */
+	#headImg{
+		position:absolute;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		margin:0; padding:0;
+		left:0;
+		top:0;
+		z-index:-10;
+	}
+	#headImg img, #backImg img{
+		position:absolute;
+		width:100%;
+		min-height:100%;
+		z-index:-10;
+	}
+	#backImg{
+		position:absolute;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		margin:0; padding:0;
+		left:0;
+		top:100%;
+		z-index:-10;
+	}
+	header{
+		margin-top:15px;
+	}
+	header h1{
+		color:white;
+		font-size:64px;
+		font-family: Quicksand, sans-serif;
+		font-weight:300;
+		background-color:rgba(46,52,54,0.6);
+		padding: 0px 10px 5px 10px;
+		margin:0;
+	}
+
+/* Sections */
+	section.alpha:first-of-type{
+		margin-top:35px;
+	}
+	section.beta h1, section.gamma h1{
+		font-family:Quicksand;
+		margin:4px 0px;
+		color:white;
+		background:#2e3436;
+		position:relative;
+		margin-left:-2.5%;
+		padding:10px;
+		padding-left:15px;
+	}
+	section.beta>h1{
+		margin-left:-5%;
+	}
+	section.gamma h1{
+		display:inline-block;
+	}
+	section.beta{
+		position:relative;
+		width:75%;
+		margin:0% 10%;
+		margin-top:10px;
+		border:solid #2e3436 1px;
+		background-color:rgba(255,255,255,0.8);
+	}
+	section p{
+		padding:5px;
+		margin:0px;
+	}
+	section.featured h1{
+		/*background-color:#fcaf3e;
+		color:#2e3436;*/
+		border:1px solid #fcaf3e;
+		border-width:0px 0px 0px 5px;
+		padding-left:-5px;
+	}
+	ul{
+		list-style:none;
+		width:100%;
+		margin:5px 0px;
+		display:table;
+		padding:0;
+		table-layout:fixed;
+	}
+	ul li{
+		display:table-cell;
+		text-align:center;
+	}
+	ul li:only-of-type{
+		text-align:left;
+		padding-left:10px;
+	}
+
+	iframe{
+		width:100%;
+		border:none;
+		height:80%%;
+	}
+/* Footer */
+	footer{
+		position:relative;
+		bottom:0px;
+		left:0px;
+		width:100%;
+		text-align:center;
+		font-size:.6em;
+		clear:left;
+	}

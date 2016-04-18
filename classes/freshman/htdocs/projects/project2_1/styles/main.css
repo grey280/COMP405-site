@@ -1,0 +1,245 @@
+/* So the HTML5 structural tags work in older browsers */
+	article, aside, figure, footer, header, nav, section {
+	    display: block;
+	}
+	body{
+		margin:0;
+		padding:0;
+		background-color:#EEEEDD;
+	}
+/* Navigation */
+	nav{
+		position:fixed;
+		left:0;
+		top:0;
+		width:100%;
+		height:40px;
+		background-color:#441166;
+		color:#bbaa77;
+		overflow:hidden;
+		transition:height 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		-webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    0px 1px 2px 0px rgba(50, 50, 50, 0.75);
+		box-shadow:         0px 1px 2px 0px rgba(50, 50, 50, 0.75);
+		z-index:10;
+		float:left;
+	}
+	nav a{
+		color:#bbaa77;
+		text-decoration:none;
+	}
+	nav a:hover{
+		text-decoration:underline;
+	}
+	nav a#logo{
+		color:#bbaa77;
+		text-decoration:none;
+		display:block;
+		height:40px;
+		width:230px;
+	}
+	nav a#logo:hover{
+		background-color:#555555;
+	}
+	nav:hover{
+		height:67px;
+		box-shadow:none;
+		-webkit-box-shadow:none;
+	}
+	nav img{
+		height:34px;
+		margin:3px;
+	}
+	nav h1{
+		position:absolute;
+		left:56px;
+		top:6px;
+		margin:0;
+	}
+	nav form{
+		position:absolute;
+		right:-20px;
+		top:10px;
+	}
+	nav form input[type=search]{
+		width:100px;
+		transition:width 0.2s ease-in-out;
+	}
+	nav form input[type=search]:focus{
+		width:250px;
+	}
+	nav form input[type=search]:focus::-webkit-input-placeholder {color: white;}
+	nav form input[type=search]:focus:-moz-placeholder {color: white;}/* Firefox 18- */
+	nav form input[type=search]:focus::-moz-placeholder {color: white;}/* Firefox 19+ */
+	nav form input[type=search]:focus:-ms-input-placeholder {color: white;}
+	nav form input[type=submit]{
+		visibility:hidden;
+	}
+	nav ul{
+		display:inline;
+		list-style:none;
+	}
+	nav ul li{
+		display:inline-block;
+	}
+	#nav1{
+		position:absolute;
+		top:12px;
+		width:100%;
+		text-align:center;
+		margin:0 auto 0 auto;
+		pointer-events:none;
+	}
+	nav ul li{
+		pointer-events:auto;
+		margin:0 15px;
+	}
+	#nav2{
+		width:100%;
+		text-align:center;
+		background-color:#ffffee;
+		color:#555555;
+		padding-left:0;
+		display:block;
+		height:22px;
+		position:absolute;
+		top:40px;
+		margin:0;
+		padding-top:5px;
+		-webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.75) inset;
+		-moz-box-shadow:    0px 1px 2px 0px rgba(50, 50, 50, 0.75) inset;
+		box-shadow:         0px 1px 2px 0px rgba(50, 50, 50, 0.75) inset;
+	}
+	#nav2 a{
+		color:#555555;
+	}
+
+/* General */
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+/* Header */
+	header{
+		background:url(../images/piano.jpg) no-repeat center center fixed;
+		background-position:50% 70%;
+		background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size: cover;
+		position:relative;
+		margin:40px auto 0px auto;
+		z-index:0;
+		width:100%;
+		max-width:990px;
+		height:240px;
+	}
+	header h1{
+		color:white;
+		font-size:64px;
+		margin-top:15px;
+		font-family: Quicksand, sans-serif;
+		font-weight:300;
+		position:absolute;
+		bottom:7%;
+		background-color:rgba(46,52,54,0.4);
+		padding: 0px 10px 5px 10px;
+		margin:0;
+	}
+	
+/* Sections */
+	section.holder{
+		position:relative;
+		margin:0px auto 10px auto;
+		z-index:0;
+		width:100%;
+		max-width:980px;
+		background-color:#ffffee;
+		padding:5px;
+		clear:both;
+		height:auto;
+		overflow:visible;
+	}
+	section.body{
+		position:relative;
+		width:100%;
+		max-width:690px;
+		border:solid 1px #dddddd;
+		background-color:white;
+		padding:15px;
+		margin:5px;
+		float:right;
+		margin-left:auto;
+	}
+	section.subnav{
+		position:relative;
+		width:100%;
+		max-width:240px;
+		margin:5px;
+		border:solid 1px #dddddd;
+		background-color:white;
+		float:left;
+	}
+	.subnav ul{
+		margin:0;
+		list-style:none;
+		padding-right:5px;
+		padding-left:5px;
+	}
+	.subnav ul li{
+		margin:5px 0px;
+		border:solid 1px #dddddd;
+		border-width:0px 0px 1px 0px;
+		padding-bottom:5px;
+	}
+	.subnav ul li:last-of-type{
+		border-width:0px;
+	}
+	.subnav ul li a{
+		color:#555555;
+		text-decoration:none;
+	}
+	.subnav ul li a:hover{
+		text-decoration:underline;
+	}
+	.breadcrumb{
+		font-size:.75em;
+		color:#dddddd;
+		position:relative;
+		top:-5px;
+	}
+	.breadcrumb a{
+		color:#555555;
+	}
+	.body h1{
+		font-family:Quicksand;
+		border:solid 1px #dddddd;
+		border-width:0px 0px 1px 0px;
+		margin-top:2px;
+		font-size:2em;
+	}
+	.body h2{
+		font-family:Quicksand;
+		border:solid 1px #dddddd;
+		border-width:0px 0px 1px 0px;
+		margin-top:2px;
+		font-size:1.5em;
+	}
+	.body h3{
+		font-family:Quicksand;
+		margin-top:2px;
+		font-size:1.25em;
+	}
+	.body img{
+		max-width:300px;
+		float:right;
+		margin:5px;
+		clear:right;
+	}
+/* Footer */
+	footer{
+		clear:both;
+		font-size:.75em;
+		text-align:center;
+	}
+	footer p{
+		margin:5px 0;
+	}
