@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,6 +6,12 @@
       $pageID = 2;
     ?>
     <meta name="description" content="">
+    <style type="text/css">
+      .success a:link, .info a:link, .warning a:link, 
+      .success a:visited, .info a:visited, .warning a:visited{
+        color:black;
+      }
+    </style>
     <title>Academic Work - Grey Patterson</title>
   </head>
 
@@ -35,34 +40,34 @@
         <div class="col-md-3">
           <h2>Fall Semester</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="info">COMP160: Functions</td></tr>
-            <tr><td class="info">COMP121: Web Design</td></tr>
-            <tr><td class="warning">IDST007: Colloquium</td></tr>
-            <tr><td class="success">MUSC122: ETSS I</td></tr>
-            <tr><td class="success">MUSC121: Music Theory I</td></tr>
-            <tr><td class="success">MUSC117: Concert Choir</td></tr>
-            <tr><td class="success">MUSC203: Applied Voice: Major</td></tr>
-            <tr><td class="info">MATH170: Calculus I</td></tr>
+            <tr><td class="success"><a href="./classes/freshman/fall/COMP121.php">COMP121: Web Design</a></td></tr>
+            <tr><td class="warning"><a download href="./classes/freshman/fall/COMP160.pdf">COMP160: Functions</a></td></tr>
+            <tr><td class="">MATH170: Calculus I</td></tr>
+            <tr><td class="warning"><a download href="./classes/freshman/fall/IDST007.pdf">IDST007: Colloquium</a></td></tr>
+            <tr><td class="">MUSC117: Concert Choir</td></tr>
+            <tr><td class="warning"><a download href="./classes/freshman/fall/MUSC121.pdf">MUSC121: Music Theory I</a></td></tr>
+            <tr><td class="warning"><a download href="./classes/freshman/fall/MUSC122.pdf">MUSC122: ETSS I</a></td></tr>
+            <tr><td class="">MUSC203: Applied Voice: Major</td></tr>
           </table>
         </div>
         <div class="col-md-3">
           <h2>January Term</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="info">MATH220: Intro to Proofs</td></tr>
+            <tr><td class="">MATH220: Intro to Proofs</td></tr>
           </table>
         </div>
         <div class="col-md-3">
           <h2>Spring Semester</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="info">COMP161: Data Structures</td></tr>
-            <tr><td class="warning">INQS125: Inquiry Seminar</td></tr>
-            <tr><td class="success">MUSC124: ETSS II</td></tr>
-            <tr><td class="success">MUSC123: Music Theory II</td></tr>
-            <tr><td class="success">MUSC117: Concert Choir</td></tr>
-            <tr><td class="success">MUSC203: Applied Voice: Major</td></tr>
-            <tr><td class="success">MUSC233: Music History/Literature: Intro</td></tr>
-            <tr><td class="success">MUSC135: Understanding Jazz</td></tr>
-            <tr><td class="success">MUSC108: Men's Glee</td></tr>
+            <tr><td class="">COMP161: Data Structures</td></tr>
+            <tr><td class="warning"><a download href="./classes/freshman/spring/INQS125.pdf">INQS125: Inquiry Seminar</a></td></tr>
+            <tr><td class="">MUSC108: Men's Glee</td></tr>
+            <tr><td class="">MUSC117: Concert Choir</td></tr>
+            <tr><td class="">MUSC123: Music Theory II</td></tr>
+            <tr><td class="">MUSC124: ETSS II</td></tr>
+            <tr><td class="warning"><a download href="./classes/freshman/spring/MUSC135.pdf">MUSC135: Understanding Jazz</a></td></tr>
+            <tr><td class="">MUSC203: Applied Voice: Major</td></tr>
+            <tr><td class="warning"><a download href="./classes/freshman/spring/MUSC233.pdf">MUSC233: Music History/Literature: Intro</a></td></tr>
           </table>
         </div>
       </div>
@@ -76,44 +81,44 @@
         <div class="col-md-3">
           <h2>Summer Term</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="info">COMP260: Database Management Systems</td></tr>
+            <tr><td class="">COMP260: Database Management Systems</td></tr>
           </table>
         </div>
         <div class="col-md-3">
           <h2>Fall Semester</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="success">MUSC222: ETSS III</td></tr>
-            <tr><td class="success">MUSC221: Music Theory III</td></tr>
-            <tr><td class="success">MUSC117: Concert Choir</td></tr>
-            <tr><td class="success">MUSC203*10: Applied Voice: Major</td></tr>
-            <tr><td class="success">MUSC203*3: Applied Composition: Major</td></tr>
-            <tr><td class="info">COMP262: Data Abstraction</td></tr>
-            <tr><td class="info">MATH230: Discrete Mathematics</td></tr>
-            <tr><td class="success">MUSC253: Music Cultures of the World</td></tr>
-            <tr><td class="success">MUSC108: Men's Glee</td></tr>
+            <tr><td class="">MUSC222: ETSS III</td></tr>
+            <tr><td class="">MUSC221: Music Theory III</td></tr>
+            <tr><td class="">MUSC117: Concert Choir</td></tr>
+            <tr><td class="">MUSC203*10: Applied Voice: Major</td></tr>
+            <tr><td class="">MUSC203*3: Applied Composition: Major</td></tr>
+            <tr><td class="">COMP262: Data Abstraction</td></tr>
+            <tr><td class="">MATH230: Discrete Mathematics</td></tr>
+            <tr><td class="">MUSC253: Music Cultures of the World</td></tr>
+            <tr><td class="">MUSC108: Men's Glee</td></tr>
           </table>
         </div>
         <div class="col-md-3">
           <h2>January Term</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="info">COMP330: Operating Systems/Networking</td></tr>
-            <tr><td class="warning">ENGL304: Environmental Literature</td></tr>
+            <tr><td class="">COMP330: Operating Systems/Networking</td></tr>
+            <tr><td class="">ENGL304: Environmental Literature</td></tr>
           </table>
         </div>
         <div class="col-md-3">
           <h2>Spring Semester</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="success">MUSC223: Music Theory IV</td></tr>
-            <tr><td class="success">MUSC224: ETSS IV</td></tr>
-            <tr><td class="success">MUSC225: Music Technology</td></tr>
-            <tr><td class="warning">HHPA067: Scuba</td></tr>
-            <tr><td class="info">COMP377: Computer Architecture</td></tr>
-            <tr><td class="info">COMP405: Platform-Based Software Development</td></tr>
-            <tr><td class="success">MUSC117: Concert Choir</td></tr>
-            <tr><td class="success">MUSC203*10: Applied Voice: Major</td></tr>
-            <tr><td class="success">MUSC108: Men's Glee</td></tr>
-            <tr><td class="success">MUSC203*3: Applied Composition: Major</td></tr>
-            <tr><td class="success">MUSC141: Keyboard for the Professional Musician: Intermediate</td></tr>
+            <tr><td class="">MUSC223: Music Theory IV</td></tr>
+            <tr><td class="">MUSC224: ETSS IV</td></tr>
+            <tr><td class="">MUSC225: Music Technology</td></tr>
+            <tr><td class="">HHPA067: Scuba</td></tr>
+            <tr><td class="">COMP377: Computer Architecture</td></tr>
+            <tr><td class="">COMP405: Platform-Based Software Development</td></tr>
+            <tr><td class="">MUSC117: Concert Choir</td></tr>
+            <tr><td class="">MUSC203*10: Applied Voice: Major</td></tr>
+            <tr><td class="">MUSC108: Men's Glee</td></tr>
+            <tr><td class="">MUSC203*3: Applied Composition: Major</td></tr>
+            <tr><td class="">MUSC141: Keyboard for the Professional Musician: Intermediate</td></tr>
           </table>
         </div>
       </div>
@@ -125,19 +130,19 @@
         <div class="col-md-3">
           <h2>Summer</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="info">COMP487: Research/Internship</td></tr>
+            <tr><td class="">COMP487: Research/Internship</td></tr>
           </table>
         </div>
         <div class="col-md-3">
           <h2>Fall Semester</h2>
           <table class="table table-bordered table-striped">
-            <tr><td class="warning">MLGR103: Survival German/Vienna</td></tr>
-            <tr><td class="warning">MLGR101: Elementary German 1</td></tr>
-            <tr><td class="warning">HIST365: Ethnic Diversity/Eastern Europe</td></tr>
-            <tr><td class="warning">MLGR373: Politics of European Integration</td></tr>
-            <tr><td class="warning">MLGR365: Austrian Pol/Sci in Europe</td></tr>
-            <tr><td class="warning">SOAN040: Community Service</td></tr>
-            <tr><td class="warning">IDST031: Intercultural Communication: Departure/Reentry</td></tr>
+            <tr><td class="">MLGR103: Survival German/Vienna</td></tr>
+            <tr><td class="">MLGR101: Elementary German 1</td></tr>
+            <tr><td class="">HIST365: Ethnic Diversity/Eastern Europe</td></tr>
+            <tr><td class="">MLGR373: Politics of European Integration</td></tr>
+            <tr><td class="">MLGR365: Austrian Pol/Sci in Europe</td></tr>
+            <tr><td class="">SOAN040: Community Service</td></tr>
+            <tr><td class="">IDST031: Intercultural Communication: Departure/Reentry</td></tr>
           </table>
         </div>
         <div class="col-md-3">
@@ -156,10 +161,10 @@
           <h1>Key</h1>
           <table class="table table-bordered table-striped">
             <tr>
-              <td>Normal Classes</td>
-              <td class="warning">General Education Requirements</td>
-              <td class="info">Computer Science Major</td>
-              <td class="success">Music Major</td>
+              <td>No Attachments</td>
+              <td class="warning">Syllabus Available</td>
+              <td class="info">Academic Work Available</td>
+              <td class="success">Academic Work and Syllabus Available</td>
             </tr>
           </table>
         </div>
