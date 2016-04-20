@@ -1,6 +1,6 @@
     <hr>
     <footer>
-        <p class="text-center"><small>&copy; 2016 Grey Patterson. A <a href="http://twoeighty.net">TwoEighty</a> site.</small></p>
+        <p class="text-center"><small>&copy; 2016 Grey Patterson. A <a href="http://twoeighty.net">TwoEighty</a> site. My code is on <a href="https://github.com/grey280/COMP405-site">Github</a>, if you'd like to take a look.</small></p>
     </footer>
     </div> <!-- /container -->
 
