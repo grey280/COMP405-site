@@ -15,15 +15,15 @@
             <li class="dropdown <?php if($pageID == 2 || $pageID == 5){ echo "active";}?>">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Academics <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li class="<?php if($pageID == 2){ echo "active";}?>"><a href="work.php">My Academic Work</a></li>
+                  <li class="<?php if($pageID == 2){ echo "active";}?>"><a href="http://asteroid.cs.linfield.edu/~gpatter/work.php">My Academic Work</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Linfield</li>
                   <li><a href="http://linfield.edu/">Home</a></li>
-                  <li class="<?php if($pageID == 5){ echo "active";}?>"><a href="linfieldImages.php">Images</a></li>
+                  <li class="<?php if($pageID == 5){ echo "active";}?>"><a href="http://asteroid.cs.linfield.edu/~gpatter/linfieldImages.php">Images</a></li>
                 </ul>
             </li>
-            <li class="<?php if($pageID == 3){ echo "active";}?>"><a href="hobbies.php">Hobbies</a></li>
-            <li class="<?php if($pageID == 4){ echo "active";}?>"><a href="resume.php">Résumé</a></li>
+            <li class="<?php if($pageID == 3){ echo "active";}?>"><a href="http://asteroid.cs.linfield.edu/~gpatter/hobbies.php">Hobbies</a></li>
+            <li class="<?php if($pageID == 4){ echo "active";}?>"><a href="http://asteroid.cs.linfield.edu/~gpatter/resume.php">Résumé</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>

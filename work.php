@@ -109,7 +109,7 @@
           <h2>Spring Semester</h2>
           <table class="table table-bordered">
             <tr><td class="warning"><a download href="./classes/sophomore/spring/COMP377.pdf">COMP377: Computer Architecture</a></td></tr>
-            <tr><td class="warning"><!-- TODO: Build a 'coursework' page for this --><a download href="./classes/sophomore/spring/COMP405.pdf">COMP405: Platform-Based Software Development</a></td></tr>
+            <tr><td class="success"><a href="./classes/sophomore/spring/COMP405.php">COMP405: Platform-Based Software Development</a></td></tr>
             <tr><td class="">HHPA067: Scuba</td></tr>
             <tr><td class="warning"><a download href="./classes/sophomore/spring/MUSC108.pdf">MUSC108: Men's Glee</a></td></tr>
             <tr><td class="warning"><a download href="./classes/sophomore/spring/MUSC117.pdf">MUSC117: Concert Choir</td></tr>
