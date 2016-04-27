@@ -22,7 +22,16 @@
       <div class="row">
         <div class="col-md-6">
           <h1>Coursework</h1>
+         
+          <h2>Assignment 1</h2>
+          <div class="btn-group">
+            <a download href="./COMP405/Assignment1.pdf" class="btn btn-default"><span class="glyphicon glyphicon-download"></span> Download Description</a>
+            <a href="../../../assignments/assignment1_1.html" class="btn btn-default">Assignment 1 Part 1</a>
+            <a href="../../../assignments/assignment1_3.html" class="btn btn-default">Assignment 1 Part 3</a>
+          </div>
+          <h2>Assignment 2</h2>
           <p>The majority of work for this class was a rolling project that lasted throughout the semester, building the website that you're looking at now.</p>
+          <p>This was initially begun as 'Assignment 2'.</p>
         </div>
         <div class="col-md-6">
           <h1>Projects</h1>
