@@ -81,7 +81,7 @@
         <div class="col-md-3">
           <h2>Summer Term</h2>
           <table class="table table-bordered">
-            <tr><td class="">COMP260: Database Management Systems</td></tr>
+            <tr><td class="warning"><a href="./classes/sophomore/summer/COMP260.php">COMP260: Database Management Systems</a></td></tr>
           </table>
         </div>
         <div class="col-md-3">
