@@ -26,8 +26,8 @@
           <h2>Assignment 1</h2>
           <div class="btn-group">
             <a download href="./COMP405/Assignment1.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Download Description</a>
-            <a href="../../../assignments/assignment1_1.html" class="btn btn-default">Part 1</a>
-            <a href="../../../assignments/assignment1_3.html" class="btn btn-default">Part 3</a>
+            <a href="../../../assignments/assignment1_1.html" class="btn btn-success">Part 1</a>
+            <a href="../../../assignments/assignment1_3.html" class="btn btn-success">Part 3</a>
           </div>
           <h2>Assignment 2</h2>
           <p>The majority of work for this class was a rolling project that lasted throughout the semester, building the website that you're looking at now.</p>
@@ -35,7 +35,13 @@
         </div>
         <div class="col-md-6">
           <h1>Projects</h1>
-          <p>The first midterm project was to create the homepage for an intranet site for the International University of Grand-Bassam. It is available for your perusal <a href="../../../midterms/midterm1/">here</a>.
+          <p>The first midterm project was to create the homepage for an intranet site for the International University of Grand-Bassam. It is available for your perusal <a href="../../../midterms/midterm1/">here</a>.</p>
+          <p>The final project was to create a Rails-based social network utilizing a couple of different frameworks.</p>
+            <div class="btn-group">
+              <a download href="./COMP405/Project.pdf" class="btn btn-primary"><span class="glyphicon glyphicon-download"></span> Dowload Description</a>
+              <a href="https://github.com/grey280/COMP405-project" class="btn btn-info">View on GitHub</a>
+              <a href="http://greypatterson-comp405.herokuapp.com" class="btn btn-success">View on Heroku</a>
+            </div>
         </div>
     </div>
     <?php include '../../../footer.php' ?>
