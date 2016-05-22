@@ -22,7 +22,6 @@
                   <li class="<?php if($pageID == 5){ echo "active";}?>"><a href="http://asteroid.cs.linfield.edu/~gpatter/linfieldImages.php">Images</a></li>
                 </ul>
             </li>
-            <li class="<?php if($pageID == 3){ echo "active";}?>"><a href="http://asteroid.cs.linfield.edu/~gpatter/hobbies.php">Hobbies</a></li>
             <li class="<?php if($pageID == 4){ echo "active";}?>"><a href="http://asteroid.cs.linfield.edu/~gpatter/resume.php">Résumé</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
