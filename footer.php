@@ -20,19 +20,19 @@
     <!-- Custom Theme JavaScript -->
     <script src="http://asteroid.cs.linfield.edu/~gpatter/js/creative.js"></script>
 
-    <!-- Piwik analytics JavaScript -->
+    <!-- Piwik -->
     <script type="text/javascript">
-        var _paq = _paq || [];
-        _paq.push(["setDomains", ["*.asteroid.cs.linfield.edu/~gpatter"]]);
-         _paq.push(['trackPageView']);
-         _paq.push(['enableLinkTracking']);
-         (function() {
-           var u="//grey280.net/analytics/";
-           _paq.push(['setTrackerUrl', u+'piwik.php']);
-          _paq.push(['setSiteId', 12]);
-          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-         })();
+      var _paq = _paq || [];
+      _paq.push(["setDomains", ["*.asteroid.cs.linfield.edu/~gpatter"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.twoeighty.net/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 12]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
     </script>
-    <noscript><p><img src="//grey280.net/analytics/piwik.php?idsite=12" style="border:0;" alt="" /></p></noscript>
+    <noscript><p><img src="//analytics.twoeighty.net/piwik.php?idsite=12" style="border:0;" alt="" /></p></noscript>
     <!-- End Piwik Code -->
